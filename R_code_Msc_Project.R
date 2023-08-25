@@ -189,7 +189,7 @@ df <- coverage_cutoff_iterator(bam_directory = "PRJNA480455/glucose",
                        count_file_dir = "PRJNA480455/test/glucose_output")
 
 
-# Script modified from J. Stiens' code, to work with this dataset.
+### Script from J. Stiens' code to combine the GFF3 files produced above into a combined GFF3 file. Modified to work with this dataset.
 
 # adapted from script comb_gff.R
 # combining (filtered) gff3 files with predicted sRNA/UTR annotations to get one master list
@@ -388,9 +388,9 @@ count_features(bam_dir = "PRJNA480455/DE_BAM/", annotation_dir = "PRJNA480455/gf
 # The differential expression step - requires a condition (metadata) text file in the format seen on the GitHub. Produces a results.csv file and a DE.res object in R. Taken from Baerhunter.
 de.glu_lac <- differential_expression(
   feature_count_file="PRJNA480455/Counts/glu_lac_Counts.csv", 
-  metadata_file="PRJNA480455/all_BAM/glu_lac.txt", 
+  metadata_file="PRJNA480455/DE_BAM/glu_lac.txt", 
   cutoff_value=10, multiple_variables=FALSE, main_condition="condition",   
-  output_file_name="PRJNA480455/DE_res/glu_lac_results.csv")
+  output_file_name="PRJNA480455/DE_results/glu_lac_results.csv")
 
 # A function to plot create volcano plots based on the results of differential expression:
 
