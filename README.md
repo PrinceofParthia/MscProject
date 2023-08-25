@@ -4,4 +4,4 @@ Mycobacterium tuberculosis is a pathogenic bacterium which is one of the most se
 
 The author thanks Jennifer Stiens for help in troubleshooting the dataset and for providing code and advice on auxiliary functions of Baerhunter.
 
-MSc project code and all files smaller than the Serafini dataset files that were used in analysis in Baerhunter.
+This repository contains the MSc project code and all files smaller than the Serafini dataset files that were used in analysis in Baerhunter.
